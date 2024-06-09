@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>Tests</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>19</maven.compiler.source>
+        <maven.compiler.target>19</maven.compiler.target>
+        <slf4j.version>2.0.7</slf4j.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/net.sf.sociaal/freetts -->
+        <!--        <dependency>-->
+        <!--            <groupId>net.sf.sociaal</groupId>-->
+        <!--            <artifactId>freetts</artifactId>-->
+        <!--            <version>1.2.2</version>-->
+        <!--        </dependency>-->
+
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.15.4</version>
+        </dependency>
+
+
+        <!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.apache.tika/tika-core &ndash;&gt;-->
+        <dependency>
+            <groupId>org.apache.tika</groupId>
+            <artifactId>tika-core</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/com.positiondev.epublib/epublib-core -->
+        <!--        <dependency>-->
+        <!--            <groupId>com.positiondev.epublib</groupId>-->
+        <!--            <artifactId>epublib-core</artifactId>-->
+        <!--            <version>3.1</version>-->
+        <!--        </dependency>-->
+
+        <dependency>
+            <groupId>nl.siegmann.epublib</groupId>
+            <artifactId>epublib-core</artifactId>
+            <version>3.1</version>
+        </dependency>
+
+        <!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.slf4j/slf4j-api &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.slf4j</groupId>-->
+        <!--            <artifactId>slf4j-api</artifactId>-->
+        <!--            <version>2.0.7</version>-->
+        <!--        </dependency>-->
+
+        <!--        <dependency>-->
+        <!--            <groupId>org.apache.tika</groupId>-->
+        <!--            <artifactId>tika-parsers</artifactId>-->
+        <!--            <version>1.17</version>-->
+        <!--        </dependency>-->
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version> <!-- Поточна версія Lombok -->
+            <scope>provided</scope>
+        </dependency>
+
+
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>psiegman-repo</id>
+            <url>https://github.com/psiegman/mvn-repo/raw/master/releases</url>
+        </repository>
+    </repositories>
+</project>
